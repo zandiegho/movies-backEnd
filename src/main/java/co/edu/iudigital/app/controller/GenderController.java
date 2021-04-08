@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.iudigital.app.model.entity.Gender;
+import co.edu.iudigital.app.model.repository.UserRepository;
 import co.edu.iudigital.app.services.iface.GenderService;
 
 @RestController
 @RequestMapping("/gender")
 @CrossOrigin("*")
 public class GenderController {
+	
 	
 	@Autowired
 	private GenderService genderService;
