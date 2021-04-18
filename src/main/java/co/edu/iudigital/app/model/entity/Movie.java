@@ -37,6 +37,9 @@ public class Movie implements Serializable{
 	private int rating;
 	
 	//constructor	
+	
+	
+	
 
 	public Movie(int id, String name, String description, String image, LocalDateTime createAt, LocalDate releaseDate,
 			String actors, Gender genderId, int rating) {
@@ -52,6 +55,10 @@ public class Movie implements Serializable{
 		this.rating = rating;
 	}
 	
+	public Movie() {
+		super();
+	}
+
 	//Getter & Setters 	
 	
 	public int getId() {
